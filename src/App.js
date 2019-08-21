@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './style.scss';
+
+import fileData from './fileData.json';
+// import nameFromFileName from './nameSystem.js';
 
 function App() {
+  console.log(fileData);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='intro'>
+        <h1>Posters</h1>
+        <h2>
+          <a href='https://www.xypnox.com/'> by xypnox</a>
+        </h2>
+      </div>
+      <div className='Gallary'>
+        {fileData.map(fileName => {
+          return (
+            <div
+              className='item'
+              onClick={() => {
+                window.open('images/' + fileName);
+              }}
+            >
+              <img src={'images/' + fileName} alt='' srcSet='' />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
