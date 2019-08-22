@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='App'>
       <div className='intro'>
-        <h1>Posters</h1>
+        <h1>POSTERS</h1>
         <h2>
           <a href='https://www.xypnox.com/'> by xypnox</a>
         </h2>
