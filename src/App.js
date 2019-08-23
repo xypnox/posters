@@ -17,7 +17,7 @@ function App() {
         </h2>
       </div>
       <div className='Gallary'>
-        {fileData.map(fileName => {
+        {fileData.reverse().map(fileName => {
           return (
             <div
               className='item'
