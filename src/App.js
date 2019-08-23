@@ -25,7 +25,7 @@ function App() {
                 window.open('images/' + fileName);
               }}
             >
-              <img src={'images/' + fileName} alt='' srcSet='' />
+              <img src={'compressed/' + fileName} alt='' srcSet='' />
             </div>
           );
         })}
