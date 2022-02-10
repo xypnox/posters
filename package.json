@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "compress-images": "^1.5.8",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
